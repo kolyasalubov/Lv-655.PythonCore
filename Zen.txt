@@ -23,4 +23,5 @@
 27.Flat is better than nested.
 28. Although practicality beats purity.
 32.Unless explicitly silenced.
+36.Although never is often better than *right* now.
 38. (19)Namespaces are one honking great idea � let's do more of those!
