@@ -19,8 +19,12 @@
 18.If the implementation is easy to explain, it may be a good idea.
 19.Namespaces are one honking great idea � let's do more of those!
 20.Beautiful is better than ugly.
+<<<<<<< HEAD
 21.Unless explicitly silenced.
 27.Flat is better than nested.
 28. Although practicality beats purity.
 32.Unless explicitly silenced.
 38. (19)Namespaces are one honking great idea � let's do more of those!
+=======
+37.Now is better than never.
+>>>>>>> AlexanderRomanovskyi
