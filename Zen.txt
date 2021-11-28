@@ -23,8 +23,8 @@
 27.Flat is better than nested.
 28. Although practicality beats purity.
 30.Unless explicitly silenced.
+30.Unless explicitly silenced.
 36.Although never is often better than *right* now.
 37.Now is better than never.
 38. (19)Namespaces are one honking great idea   let's do more of those!
 40.Beautiful is better than ugly.
-
