@@ -22,7 +22,7 @@
 21.Unless explicitly silenced.
 27.Flat is better than nested.
 28.Although practicality beats purity.
-30.Explicit is better than implicit.
+30.Unless explicitly silenced.
 33.Unless explicitly silenced.
 35.If the implementation is hard to explain, it's a bad idea.
 36.If the implementation is hard to explain, it's a bad idea.
