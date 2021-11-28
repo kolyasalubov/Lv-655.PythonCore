@@ -21,10 +21,11 @@
 20.Beautiful is better than ugly.
 21.Unless explicitly silenced.
 27.Flat is better than nested.
-28. Although practicality beats purity.
+28.Although practicality beats purity.
 30.Unless explicitly silenced.
 33.Unless explicitly silenced.
 36.If the implementation is hard to explain, it's a bad idea.
 37.Now is better than never.
 38. (19)Namespaces are one honking great idea   let's do more of those!
 40.Beautiful is better than ugly.
+47.Although practicality beats purity.
