@@ -26,4 +26,5 @@
 36.Although never is often better than *right* now.
 37.Now is better than never.
 38. (19)Namespaces are one honking great idea   let's do more of those!
+40.Beautiful is better than ugly.
 
