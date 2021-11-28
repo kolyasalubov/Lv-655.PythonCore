@@ -15,14 +15,14 @@
 14.Although that way may not be obvious at first unless you're Dutch.
 15.Now is better than never.
 16.Although never is often better than *right* now.
-17 Explicit is better than implicit.
+17.If the implementation is hard to explain, it's a bad idea.
 18.If the implementation is easy to explain, it may be a good idea.
 19.Namespaces are one honking great idea   let's do more of those!
 20.Beautiful is better than ugly.
 21.Unless explicitly silenced.
 27.Flat is better than nested.
 28.Although practicality beats purity.
-30.Unless explicitly silenced.
+30.Explicit is better than implicit.
 33.Unless explicitly silenced.
 35.If the implementation is hard to explain, it's a bad idea.
 36.If the implementation is hard to explain, it's a bad idea.
