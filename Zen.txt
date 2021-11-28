@@ -1,4 +1,4 @@
----Zen of Python---
+﻿---Zen of Python---
 1.
 2.Explicit is better than implicit.
 3.Simple is better than complex.
@@ -24,7 +24,7 @@
 28. Although practicality beats purity.
 30.Unless explicitly silenced.
 33.Unless explicitly silenced.
-36.Although never is often better than *right* now.
+36.If the implementation is hard to explain, it's a bad idea.
 37.Now is better than never.
 38. (19)Namespaces are one honking great idea   let's do more of those!
 40.Beautiful is better than ugly.
