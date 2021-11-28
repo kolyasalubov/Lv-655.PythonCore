@@ -30,3 +30,4 @@
 38. (19)Namespaces are one honking great idea   let's do more of those!
 40.Beautiful is better than ugly.
 47.Although practicality beats purity.
+39.If the implementation is hard to explain, it's a bad idea. 
