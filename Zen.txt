@@ -28,6 +28,5 @@
 36.If the implementation is hard to explain, it's a bad idea.
 37.Now is better than never.
 38. (19)Namespaces are one honking great idea   let's do more of those!
-40.Beautiful is better than ugly.
+40.Explicit is better than implicit.
 47.Although practicality beats purity.
-39.If the implementation is hard to explain, it's a bad idea. 
