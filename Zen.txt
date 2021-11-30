@@ -30,6 +30,7 @@
 37.Now is better than never.
 38. (19)Namespaces are one honking great idea   let's do more of those!
 40.Explicit is better than implicit.
+41.Simple is better than complex.
 47.Although practicality beats purity.
 25.Sparse is better than dense.
 39.If the implementation is hard to explain, it's a bad idea.
