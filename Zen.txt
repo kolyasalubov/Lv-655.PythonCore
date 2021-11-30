@@ -1,5 +1,5 @@
 ﻿---Zen of Python---
-1.
+1.Beautiful is better than ugly.
 2.Explicit is better than implicit.
 3.Simple is better than complex.
 4.Complex is better than complicated.
@@ -19,18 +19,27 @@
 18.If the implementation is easy to explain, it may be a good idea.
 19.Namespaces are one honking great idea   let's do more of those!
 20.Beautiful is better than ugly.
-40.Explicit is better than implicit.
 21.Unless explicitly silenced.
+22.
+23.
+24.
+25.Sparse is better than dense.
+26.Complex is better than complicated.
 27.Flat is better than nested.
 28.Although practicality beats purity.
+29.
 30.Unless explicitly silenced.
+31.
+32.
 33.Unless explicitly silenced.
+34.Now is better than never.
 35.If the implementation is hard to explain, it's a bad idea.
 36.If the implementation is hard to explain, it's a bad idea.
 37.Now is better than never.
 38. (19)Namespaces are one honking great idea   let's do more of those!
+39.If the implementation is hard to explain, it's a bad idea.
 40.Explicit is better than implicit.
 41.Simple is better than complex.
 47.Although practicality beats purity.
-25.Sparse is better than dense.
-39.If the implementation is hard to explain, it's a bad idea.
+
+
