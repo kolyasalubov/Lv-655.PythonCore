@@ -39,7 +39,7 @@
 38. (19)Namespaces are one honking great idea   let's do more of those!
 39.If the implementation is hard to explain, it's a bad idea.
 40.Explicit is better than implicit.
-41.Simple is better than complex.
+41.1421421412412412
 47.Although practicality beats purity.
 
 
