@@ -20,8 +20,8 @@
 19.Namespaces are one honking great idea   let's do more of those!
 20.Beautiful is better than ugly.
 21.Unless explicitly silenced.
-24.Complex is better than complicated.
 25.Sparse is better than dense.
+26.Complex is better than complicated.
 27.Flat is better than nested.
 28.Although practicality beats purity.
 30.Unless explicitly silenced.
