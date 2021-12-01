@@ -21,7 +21,7 @@
 20.Beautiful is better than ugly.
 21.Unless explicitly silenced.
 22.
-23.
+23.Simple is better than complex.
 24.
 25.Sparse is better than dense.
 26.Complex is better than complicated.
@@ -41,5 +41,4 @@
 40.Explicit is better than implicit.
 41.1421421412412412
 47.Although practicality beats purity.
-23.Simple is better than complex.
 
