@@ -1,9 +1,10 @@
 number = 0
 while True:
-    number_str = input("Please input number : ")
+    number_str = input("Please input number > 0  : ")
     try:
         number = int (number_str)
-        break         
+        if number > 0:
+            break         
     except:
         print("Once more")
 

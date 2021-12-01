@@ -3,7 +3,8 @@ while True:
     number_str = input("Please input number : ")
     try:
         number = int (number_str)
-        break         
+        if number > 0:
+            break           
     except:
         print("Once more")
 
