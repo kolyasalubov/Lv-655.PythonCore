@@ -26,8 +26,8 @@ print(f"better ocupps {n_better} times")
 print(f"never ocupps {n_never} times")
 print(f"is ocupps {n_is} times")
 
-print ("String in upper case: " + string_zen.upper())
+print ("String in upper case: ", string_zen.upper())
 
 new_string = string_zen.replace('i','&')
-print ("String with replased i: " + new_string)
+print ("String with replased i: ", new_string)
 

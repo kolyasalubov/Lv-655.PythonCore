@@ -14,8 +14,8 @@ for x in number_:
 number_list = list(number_)
 number_list.sort()
 
-print ("Product of multiplication: " + str(product))
-print ("Reversed number: " + reversed_number)
-print ("Sorted number: " + str(number_list))
+print ("Product of multiplication: ", product)
+print ("Reversed number: ", reversed_number)
+print ("Sorted number: ", number_list)
 
 

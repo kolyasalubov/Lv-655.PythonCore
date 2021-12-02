@@ -13,4 +13,4 @@ number_factorial = 1
 for x in range(1,number+1):
     number_factorial *= x
 
-print (f"factorial of the {number} will be: " + str(number_factorial))
+print (f"factorial of the {number} will be: " , number_factorial)
