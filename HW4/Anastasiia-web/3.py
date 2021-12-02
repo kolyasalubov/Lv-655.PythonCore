@@ -1,20 +1,33 @@
 #  Print Fibonacci numbers up to the entered number n, using cycles. 
-# 1.
+# 1
+a, b, = 0, 1
+end_of_loop = input('Enter a number :')
+
+while b <= 55:
+    print(b)
+    a, b = b, a + b
+    if b == end_of_loop:
+        break
+print('This is the end of loop)')
+
+# 2
 a, b, = 0, 1
 
 while b <= 55:
     print(b)
     a, b = b, a + b
 
-# 2
+# 3
+
 # Use 'Ctrl + C'to stop the loop))
+
 a, b, = 0, 1
 
 while b > 0:
     print(b)
     a, b = b, a + b
 
-
+    
 
 # My draft
 
@@ -23,3 +36,4 @@ while b > 0:
 # а каждое последующее число равно сумме двух предыдущих чисел.
 
 # https://www.youtube.com/watch?v=MxQ9_pg0TKA
+# https://all-python.ru/osnovy/tsikly.html
