@@ -30,15 +30,15 @@ print("Welcome,", user_name)
 
 # Варіант 2
 
-# user_name = ""
-# while user_name == "":
-#     user_name = input("What is our name?")
-#     try:
-#         if int(user_name) > -999999999999999999999999999999999:
-#             print("Please, use a letter")
-#             user_name = ""
-#     except ValueError:
-#         print("Hello,", user_name, type(user_name))
+user_name = ""
+while user_name == "":
+    user_name = input("What is our name?")
+    try:
+        if int(user_name) > -999999999999999999999999999999999:
+            print("Please, use a letter")
+            user_name = ""
+    except ValueError:
+        print("Hello,", user_name, type(user_name))
 
 # Question 2
 user_age = 0
