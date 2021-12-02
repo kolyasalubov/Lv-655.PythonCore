@@ -4,6 +4,10 @@ factorial = 0
 while factorial == 0:
     try:
         factorial = int(input("Put a number to calculate factorial: "))
+        if factorial < 0:
+            print("You can't use a negative value. Please change to a positive!")
+            factorial = 0
+            continue
         factorial_result = 1
         for i in range(factorial):
             i += 1
