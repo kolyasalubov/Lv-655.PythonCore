@@ -74,3 +74,4 @@ square_circle_calculating()
 # print(filtered_list)
 
 # https://premierdevelopment.ru/on-line-kalkulyator-raschet-ploshchadi-treugolnika.html
+# https://allcalc.ru/node/18

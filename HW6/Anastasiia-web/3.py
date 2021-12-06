@@ -7,7 +7,6 @@ def char_number():
 
 char_number()
 
-
 # Option using one more variable
 
 # def char_number():
@@ -17,25 +16,3 @@ char_number()
 #     print(string_length)
 
 # char_number()
-
-# My drafts
-
-# for fruit in ['apple','banana','mango']:    
-# 	print("I like",fruit)
-
-# print(sorted(a))
-# print(a.union())
-# a.union.pop()
-# print(a)
-# def aa():
-#     enumerate(a)
-# print(aa)
-# print(type(a))
-# print(a)
-# print(a[0])
-# print(a.count('w'))
-# print(enumerate(a))
-
-# x = ['apple', 'banana', 'cherry']
-# y = enumerate(x)
-# print(list(y))
