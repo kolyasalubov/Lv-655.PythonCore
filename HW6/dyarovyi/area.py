@@ -31,7 +31,7 @@ def areaCircle():
         return
     
     print("The area of the circle is:", PI * r * r)
-    
+
 
 def program():
     while True:
@@ -56,3 +56,6 @@ def program():
             return
         else:
             print("ERROR. You entered a wrong value.")
+
+
+program()
