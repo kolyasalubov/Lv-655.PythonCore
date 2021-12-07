@@ -11,3 +11,4 @@ else:
     for el in range(1, number + 1):
         factorial = factorial * el
     print(f'Factorial of {number} is {factorial}')
+    

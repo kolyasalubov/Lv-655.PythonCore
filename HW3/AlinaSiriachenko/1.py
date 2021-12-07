@@ -37,21 +37,3 @@ print(upper_register_text)
 
 replace_і_to_and = zen_of_python.replace('i', '&')
 print(replace_і_to_and)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

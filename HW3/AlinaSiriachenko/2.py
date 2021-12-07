@@ -3,11 +3,14 @@
 # - Записати число в реверсному порядку.
 # - Посортувати цифри, що входять в дане число
 
-number = 1234
+number = 1254
 number_str = str(number)
-numbers_list = list(number_str)
+number_list = list(number_str)
 
-number_multiplied = number * number
+multiply_count = 1
+for el in number_str:
+    multiply_count*= int(el)
+
 number_reversed = int(number_str[::-1])
-number_sorted = sorted(numbers_list)
-print(f'Multiply = {number_multiplied}, reversed = {number_reversed}, sorted = {number_sorted}')
+number_sorted = ''.join(sorted(number_list))
+print(f'Multiply = {multiply_count}, reversed = {number_reversed}, sorted = {number_sorted}')
