@@ -1,0 +1,12 @@
+input_num = int(input())
+a = 0
+prev_num = 0
+first_num = 1
+next_num = prev_num + first_num
+
+while prev_num <= input_num:
+    print(prev_num)
+    a+=1
+    prev_num = first_num
+    first_num = next_num
+    next_num = prev_num + first_num
