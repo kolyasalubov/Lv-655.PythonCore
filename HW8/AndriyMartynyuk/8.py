@@ -4,23 +4,25 @@ from pyowm.utils import config
 from pyowm import OWM
 import calculator as c
 
-# def numbers():
-#     question = int(input(
-#         "Hello, what function do you whant to use? Please type 1 for sum, 2 - for minus, 3 - for division, 4 - for multiplication: "))
-#     a = int(input("Type number one"))
-#     b = int(input("Type number two"))
-#     if question == 1:
-#         print("Your result is: ", c.my_sum(a, b))
-#     elif question == 2:
-#         print("Your result is: ", c.my_minus(a, b))
-#     elif question == 3:
-#         print("Your result is: ", c.my_division(a, b))
-#     elif question == 4:
-#         print("Your result is: ", c.my_mult(a, b))
-#     else:
-#         print("Please, enter givven choices")
 
-# numbers()
+def numbers():
+    question = int(input(
+        "Hello, what function do you whant to use? Please type 1 for sum, 2 - for minus, 3 - for division, 4 - for multiplication: "))
+    a = int(input("Type number one"))
+    b = int(input("Type number two"))
+    if question == 1:
+        print("Your result is: ", c.my_sum(a, b))
+    elif question == 2:
+        print("Your result is: ", c.my_minus(a, b))
+    elif question == 3:
+        print("Your result is: ", c.my_division(a, b))
+    elif question == 4:
+        print("Your result is: ", c.my_mult(a, b))
+    else:
+        print("Please, enter givven choices")
+
+
+numbers()
 
 # Task 2
 
