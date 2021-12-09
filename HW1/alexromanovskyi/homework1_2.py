@@ -6,27 +6,11 @@
 # a**b.
 # Output obtained results.
 
-print ("a+b")
-number_a = int(input("Enter number a:"))
-number_b = int(input("Enter number b:"))
-print ("a+b=", int(number_a) + (number_b))
+a = int(input("add A: "))
+b = int(input("add B: "))
 
-print ("a-b")
-number_a = int(input("Enter number a:"))
-number_b = int(input("Enter number b:"))
-print ("a-b=", int(number_a) - (number_b))
-
-print ("a*b")
-number_a = int(input("Enter number a:"))
-number_b = int(input("Enter number b:"))
-print ("a*b=", int(number_a) * (number_b))
-
-print ("a/b")
-number_a = int(input("Enter number a:"))
-number_b = int(input("Enter number b:"))
-print ("a/b=", int(number_a) / (number_b))
-
-print ("a**b")
-number_a = int(input("Enter number a:"))
-number_b = int(input("Enter number b:"))
-print ("a**b=", int(number_a) ** (number_b))
+print("a+b =", a + b) 
+print("a-b =", a - b) 
+print("a*b =", a * b)
+print("/+b =", a / b)
+print("a**b =", a**b)
