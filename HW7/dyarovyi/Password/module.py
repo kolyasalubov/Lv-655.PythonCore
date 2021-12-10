@@ -1,7 +1,9 @@
-uppercase_letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-lowercase_letters = "abcdefghihjklmnopqrstuvwxyz"
-numbers = "1234567890"
-symbols = "$#@"
+import re as re
+
+uppercase_letters = "[A-Z]"
+lowercase_letters = "[a-z]"
+numbers = "\d"
+symbols = "[$#@]"
 
 def check_validity(password):
     contains_upper = False
@@ -9,17 +11,20 @@ def check_validity(password):
     contains_numbers = False
     contains_symbols = False
 
-    for char in password:
-        if char  in lowercase_letters:
-            contains_lower = True
-        elif char in uppercase_letters:
-            contains_upper = True
-        elif char in numbers:
-            contains_numbers = True
-        elif char in symbols:
-            contains_symbols = True
+    if re.findall(uppercase_letters, password) != None:
+        print(re.findall(uppercase_letters, password))
+        contains_lower = True
+    if re.findall(lowercase_letters, password) != None:
+        print(re.findall(lowercase_letters, password))
+        contains_upper = True
+    if re.findall(numbers, password) != None:
+        print(re.findall(numbers, password))
+        contains_numbers = True
+    if re.findall(symbols, password) != None:
+        print(re.findall(symbols, password))
+        contains_symbols = True
     
-    return contains_upper and contains_lower and contains_numbers and contains_symbols
+    return contains_upper and contains_lower and contains_numbers and contains_symbols and (6 <= len(password) <= 16)
 
 if __name__ == "__main__":
     password = input("Enter password: ")
