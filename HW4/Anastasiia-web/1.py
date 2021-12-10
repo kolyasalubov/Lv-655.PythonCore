@@ -60,4 +60,3 @@ print("Factorial of the number is:", fact_num)
 # weather = "raining“
 
 # print("Open Your umbrella" if weather == "raining" else "Wear your cap")
-
