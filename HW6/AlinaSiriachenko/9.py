@@ -3,11 +3,13 @@
 # input: “hello”
 # output: {“h”:1, “e”:1, “l”:2, “o”:1}
 
-def calculate_characters(string):
-    unique = []
-    for letter in string:
-        if letter not in unique:
-            unique.append(letter)
-    return len(unique)
+def calculate_characters(word):
+    result = {}
+    for item in word:
+        if item in result:
+            continue
+        else:
+            result.update({str(item): word.count(item)})
+    return result
 
 print(calculate_characters('hello'))
