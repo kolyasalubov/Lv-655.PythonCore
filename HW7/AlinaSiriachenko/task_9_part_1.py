@@ -9,7 +9,8 @@
 # модуль2, в якому імпортований модуль1 і виконується 
 # основна логіка програми).
 
-from math import pow, pi
+pi = 3.14
+from math import pow
 
 def square_of_rectangle(a, b):
     return a*b
