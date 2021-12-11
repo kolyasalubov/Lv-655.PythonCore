@@ -38,7 +38,7 @@ while not good_pass:
         re.findall(r'\d',user_pass) and 
         re.findall(r'[$#@]',user_pass) and 
         not re.findall(r'[^A-Za-z\d$#@]',user_pass) and
-        6<len(re.findall(r'[A-Za-z\d$#@]',user_pass))<16): 
+        6<=len(re.findall(r'[A-Za-z\d$#@]',user_pass))<=16): 
 
 
         good_pass=True
