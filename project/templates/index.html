@@ -1,0 +1,98 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+<!-- <h2> Search for book </h2> -->
+<table background = "/static/dairy1.jpg" class="tablo">
+  <tr>
+    <td> <p> </p> </td>
+  </tr>
+  <tr>
+    <td> <p> </p> </td>
+  </tr>
+  <tr>
+    <td class="column">
+    </td>
+    <td class="column">
+      <form action="/" method="post">
+          <div class="form-group">
+              <input class="form-control" autocomplete="off" id="form_search_isbn" name="search_isbn" aria-describedby="search_isbn_Help" placeholder="ISBN" type="text">
+              <small id="searchHelp" class="form-text text-muted">by ISBN</small>
+          </div>
+          <div class="form-group">
+              <input class="form-control" autocomplete="off" id="form_search_title" name="search_title" aria-describedby="search_title_Help" placeholder="Title" type="text">
+              <small id="search_title_Help" class="form-text text-muted">by Title</small>
+          </div>
+          <div class="form-group">
+              <input class="form-control" id="form_search_author" name="search_author" aria-describedby="search_author_Help" placeholder="Author" type="text">
+              <small id="search_author_Help" class="form-text text-muted">by Author</small>
+          </div>
+          <button class="btn btn-success btn-lg" id="butcenter" type="submit">Find my book!</button>
+      </form>
+    </td>
+    <td class="column">
+    </td>
+  </tr>
+
+  <tr>
+    <td> <p> </p> </td>
+  </tr>
+  <tr>
+    <td> <p> </p> </td>
+  </tr>
+</table>
+
+{% if empty_search %}
+  <div class="alert alert-danger" role="alert">
+    You have to provide at least one of ISBN, title or author!
+  </div>
+{% endif %}
+
+{% if no_match %}
+  <div class="alert alert-danger" role="alert">
+    We dont find anything. Try other data!
+  </div>
+{% endif %}
+
+
+{% if book_isbn %}
+  <form action="/book/{{book_isbn.id}}" method="get">
+  <div class="alert alert-warning" role="alert">
+    {% if isbn_no_match %}
+    <b>ISBN not match. Anyway, we try to find your book.</b> <br>
+    {% endif %}
+    ISBN <b>{{ book_isbn.isbn }}</b> | "{{ book_isbn.title }}" by {{ book_isbn.author }} published in <b> {{ book_isbn.year }} </b>
+    <button type="submit" class="btn btn-link">This book!</button>
+  </div>
+  </form>
+{% endif %}
+
+{% if book_title %}
+  <form action="/book/{{book_title.id}}" method="get">
+  <div class="alert alert-info" role="alert">
+    {% if title_no_match %}
+    <b>Title not match. Anyway, we try to find your book.</b> <br>
+    {% endif %}
+    ISBN {{ book_title.isbn }} | <b> "{{ book_title.title }}"</b> by {{ book_title.author }} published in <b> {{ book_title.year }} </b>
+    <button type="submit" class="btn btn-link">This book!</button>
+  </div>
+  </form>
+{% endif %}
+
+{% if book_list %}
+    {% if author_no_match %}
+    <div class="alert alert-success" role="alert">
+      <b>Author not match. Anyway, we try to find your book.</b> <br>
+    </div>
+    {% endif %}
+{% for b in book_list %}
+    <form action="/book/{{b.id}}" method="get">
+    <div class="alert alert-success" role="alert">
+      ISBN {{ b.isbn }} | "{{ b.title }}" by <b> {{ b.author }} </b>  published in <b> {{ b.year }} </b>
+      <button type="submit" class="btn btn-link">This book!</button>
+    </div>
+    </form>
+{% endfor %}
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,25 @@
+.bok_row
+{
+  width: 500px;
+}
+
+.column
+{
+  width: 600px;
+}
+
+.tablo
+{
+  margin: auto;
+}
+
+.main_column
+{
+  width: 500px;
+  text-align: center;
+}
+
+.niz
+{
+  height: 100px;
+}

@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Login
+{% endblock %}
+
+{% block main %}
+    <form action="/login" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" id="form_login" name="username" aria-describedby="usernameHelp" placeholder="User Name" type="text" required>
+            <small id="usernameHelp" class="form-text text-muted">Enter here username which you choose in registration</small>
+        </div>
+        <div class="form-group">
+            <input class="form-control" id="form_login" name="password" aria-describedby="passwordHelp" placeholder="Password" type="password" required>
+            <small id="passwordHelp" class="form-text text-muted">Enter here password which you choose in registration</small>
+        </div>
+        <button class="btn btn-success" type="submit">Enter</button>
+    </form>
+
+    {% if check1 %}
+        <p>
+            {{ check1 }} <br>
+            {{ f1 }} <br>
+            {{ f2.id }} {{ f2.username }} {{ f2.password }} {{ f2.num_rev}}
+        </p>
+    {% endif %}
+{% endblock %}
