@@ -28,10 +28,9 @@
 # print(f"Total Confirmed Covid-19 cases in {country}: {total_confirmed}")
 #__________________________________________________________________________
 
-# With fixing bug (Incorrect Endpoint) and additional requests
+# With bug fix (Incorrect Endpoint) and additional requests to the second endpoint (endpoint_last_day.status_code)
 
-import requests
-
+import requests                                                                
 from datetime import date, timedelta
 
 today = date.today()
@@ -44,24 +43,19 @@ endpoint_last_day = requests.get(
     params = {"from": str(yesterday), "to": str(today)}
 ).json()
 
-# print(endpoint_last_day.status_code)
+endpoint_total_statistics = requests.get(
+    f"https://api.covid19api.com/total/country/{country}", 
+    params={'q': 'requests+language:python'}
+).json()[-1]
 
 total_confirmed = 0
 for day in endpoint_last_day:
     cases = day.get("Cases", 0)
     total_confirmed += cases
 
-print(f"Last Day confirmed Covid-19 cases in {country}: {total_confirmed}")
-
-endpoint_total_statistics = requests.get(
-    f"https://api.covid19api.com/total/country/{country}", 
-    params={'q': 'requests+language:python'}
-).json()[-1]
-
-# print(endpoint_total_statistics.status_code)
-
 total_confirmed_cases = endpoint_total_statistics['Confirmed']
 total_death = endpoint_total_statistics['Deaths'] 
 
+print(f"Last Day confirmed Covid-19 cases in {country}: {total_confirmed}")
 print(f"In Total confirmed Covid-19 cases in {country}: {total_confirmed_cases}")
 print(f"In Total death due to confirmed Covid-19 cases in {country}: {total_death}")
