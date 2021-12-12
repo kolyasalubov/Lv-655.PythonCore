@@ -19,17 +19,17 @@ str_zen_python = """Beautiful is better than ugly."
 "If the implementation is easy to explain, it may be a good idea."
 "Namespaces are one honking great idea -- let's do more of those!"""
 
-print(str_zen_python.title())
+print(str_zen_python.upper())
 
-count_words = str_zen_python.find('better')
-print(" Кілкість слів 'better' " + str(count_words))
+count_words = str_zen_python.count('better')
+print(" Кілкість слів 'better' ", str(count_words))
 
-count_words = str_zen_python.find('never')
+count_words = str_zen_python.count('never')
 #print(count_words)
-print("Кілкість слів 'never' " + str(count_words))
+print("Кілкість слів 'never' ", str(count_words))
 
-count_words = str_zen_python.find('is')
-print("Кідькість слів 'is' " + str(count_words))
+count_words = str_zen_python.count('is')
+print("Кідькість слів 'is' ",  str(count_words))
 
 str_zen_python = str_zen_python.replace('i', '&')
 print(str_zen_python)
