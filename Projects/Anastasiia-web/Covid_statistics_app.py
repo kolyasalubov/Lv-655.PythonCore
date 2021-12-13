@@ -27,8 +27,11 @@
 
 # print(f"Total Confirmed Covid-19 cases in {country}: {total_confirmed}")
 #__________________________________________________________________________
-
-# With bug fix (Incorrect Endpoint) and additional requests to the second endpoint (endpoint_last_day.status_code)
+# Done in scope of the Project:
+# 1. Bug fix (Incorrect Endpoint)
+# 2. Additional requests were added:
+#    * second API endpoint (endpoint_last_day.status_code)
+#    * Json file to provide country's population number (source code https://github.com/samayo/country-json/blob/master/src/country-by-population.json)
 
 import requests                                                                
 from datetime import date, timedelta
