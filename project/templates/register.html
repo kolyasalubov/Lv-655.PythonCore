@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Registration
+{% endblock %}
+
+{% block main %}
+
+<table>
+  <tr class="bok_row">
+    <td>
+  </td>
+  <td>
+    <p> </p>
+  </td>
+  <td>
+    <form action="/register" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text" required>
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="password" placeholder="Password" type="password" required>
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="confirmation" placeholder="Confirm password" type="password" required>
+        </div>
+        <button class="btn btn-success" type="submit">Create new account</button>
+    </form>
+    <br>
+    <div class="alert alert-warning" role="alert">
+        Username and password must not include special symbols ; ' or ,
+    </div>
+    <br>
+    {% if existed %}
+        <div class="alert alert-danger" role="alert">
+            Please, choose other Username
+            or <a href="/login" class="alert-link">login</a>
+        </div>
+    {% endif %}
+</td>
+</tr>
+{% endblock %}

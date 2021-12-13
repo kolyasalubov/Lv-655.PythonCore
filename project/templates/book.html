@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+{% if empty_search %}
+  <div class="alert alert-danger" role="alert">
+    You have to provide ISBN or title or author! <a href="/">Try again?</a>
+  </div>
+{% endif %}
+
+{% if book %}
+<div class="alert alert-success" role="alert">
+  <h1> "{{ book.title}}" </h1> <br>
+  <h2> by {{ book.author }} </h2> <br>
+  <h6> Year: {{ book.year }} </h6> <br>
+  <h6> ISBN: {{ book.isbn }} <h6> <br>
+  <!-- {% if avg %}
+    Goodreads average rating {{ avg }}
+  {% endif %}
+  {% if num_otz %}
+    with {{ num_otz }} reviews
+  {% endif %} -->  
+</div>
+{% endif %}
+
+{% if otziv %}
+  <div class="alert alert-primary" role="alert">
+    <b>Your opinion about this book:</b> <br>
+    Rating: <b>{{ otziv.rate }}</b> <br>
+    {{ otziv.opinion }} <br>
+    <a href="/"><b>Find another book</b></a>
+  </div>
+{% endif %}
+
+{% if review_of_others %}
+<div class="alert alert-warning" role="alert">
+  <b>What other users say about this book:</b> <br>
+  Rating: <b>{{ review_of_others.rate }}</b> <br>
+  {{ review_of_others.opinion }} <br>
+</div>
+{% endif %}
+
+{% if rev_a %}
+<form action="/revd/{{book.id}}" method="post">
+  <div class="form-group">
+    <label for="Rating">Yours rating for this book (from 1 to 5, 5 - highest rate)</label>
+    <select class="form-control" id="Rating" name="rating" required>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="Review">Yours opinion about this book</label>
+    <textarea class="form-control" id="Review" rows="4" name="review" required></textarea>
+  </div>
+  <div class="form-group">
+    <button type="submit" class="btn btn-warning">Add review</button>
+  </div>
+</form>
+{% endif %}
+
+{% endblock %}
