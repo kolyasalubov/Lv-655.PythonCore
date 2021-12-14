@@ -18,3 +18,4 @@ while counter<entered_n-1:
 
 
 print("]\nTa-da! which is short for 'ta-tarada-dam' why would you ask ? because optimization is important!")
+
