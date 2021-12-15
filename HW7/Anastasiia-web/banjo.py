@@ -39,6 +39,6 @@ result = 'result'
 
 print(f"distance between {(x1,y1)} and {(x2,y2)} is {result}")
 
-print("{} is not equil to {} as a {}".format(x1, y1, result))
+print("{} is not equal to {} as a {}".format(x1, y1, result))
 
 print("distance between", (x1,y1), "and", (x2,y2), "is", result)
