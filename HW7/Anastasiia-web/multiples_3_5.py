@@ -13,6 +13,24 @@
 
 # print(solution(4))
 
+# Best practice 1
+
+def solution(number):
+    return sum(x for x in range(number) if x % 3 == 0 or x % 5 == 0)
+
+solution(7)
+
+# Best practice 2
+
+def solution(number):
+    sum = 0
+    for i in range(number):
+        if i % 3 == 0 or i % 5 == 0:
+            sum += i
+    return sum
+
+solution(6)
+
 # Notes
 
 # Odd / even numbers
@@ -22,10 +40,7 @@
 # fruits = ['apple', 'banana', 'cherry']
 # fruits.append("orange")
 
-# Additional task 1
-
 #  Make an array out of number 123 like [1,2,3]
-
 # Option 1
 # list_numbers = [int(i) for i in str(number)]   #  or   print([int(num) for num in "123456"])  # [1, 2, 3, 4, 5, 6]
 
@@ -36,5 +51,4 @@
 # print(listed)                                                   # output [1, 2]
 
 # put into array numbers as string
-
 # print(list(str(123456)))
