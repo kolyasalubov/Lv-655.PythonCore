@@ -1,6 +1,7 @@
 from math import sqrt
 
-PI = 3.14
+PI = 3.14 # constand which could be imported from math modul 
+          # or saved in separate file with all constants and imported from there
 
 def calculating_area_of_the_rectangle(side_a:float, side_b:float):
     
