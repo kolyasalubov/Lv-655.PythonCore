@@ -1,21 +1,41 @@
 # Task1. Write a function that returns the largest number of two numbers 
 # (use DocStrings documentation strings in the function). 
 
-a = int(input('Number 1? '))
-b = int(input('Number 2? '))
+a = 2
+b = 3
 
-def the_biggest_number():
-    """This function defines the biggest number"""
-    if a - b > 0:
-        print('The biggest is: ',a)
-    elif a - b == 0:
-        print('They are equal: ',a , 'and ', b)
+def the_largest_number():
+
+    """function that returns the largest 
+       number of two numbers"""
+
+    if a == b:
+        return f"{a} is equal to {b}"
+    elif a > b:
+        return a
     else:
-        print('The biggest is: ',b)
+        return b
 
-the_biggest_number()
+print(the_largest_number())
+print(the_largest_number.__doc__)
 
-print(the_biggest_number.__doc__)
+# The same idea but using input
+
+# a = int(input('Number 1? '))
+# b = int(input('Number 2? '))
+
+# def the_biggest_number():
+#     """This function defines the biggest number"""
+#     if a - b > 0:
+#         print('The biggest is: ',a)
+#     elif a - b == 0:
+#         print('They are equal: ',a , 'and ', b)
+#     else:
+#         print('The biggest is: ',b)
+
+# the_biggest_number()
+
+# print(the_biggest_number.__doc__)
 
 
 
