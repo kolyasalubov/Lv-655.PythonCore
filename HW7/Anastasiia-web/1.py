@@ -2,16 +2,19 @@
 # Write a function that returns the largest number of two numbers 
 # (use DocStrings documentation strings in the function).
 
+a = 2
+b = 3
 
-a = 1
-b = 2
 def largest_number():
 
     """function that returns the largest 
        number of two numbers"""
-    if a > b:
+
+    if a == b:
+        return f"{a} is equal to {b}"
+    elif a > b:
         return a
-    elif b > a:
-        return b
     else:
-        print(f"{a} is equal to {b} ")
+        return b
+
+print(largest_number())
