@@ -7,10 +7,22 @@
 # Minimum length 6 characters.
 # Maximum length 16 characters.
 
+import string
 
-password=input('Input your password: ')
+def validity(password):
+    if len(password)>=6 or len(password)<=16:
+        for item in password:
+            if item in string.digits:
+                result='valid'
+            if item in string.ascii_lowercase:
+                result='valid'
+            if item in string.ascii_uppercase:
+                result='valid'
+            if item in string.punctuation:
+                result='valid'
+            else:
+                result='invalid'
+                      
+    return result
 
-if len(password)<=16 and len(password)>=6:
-    
-
-    print('valid')
+print(validity(input('Input your password: ')))
