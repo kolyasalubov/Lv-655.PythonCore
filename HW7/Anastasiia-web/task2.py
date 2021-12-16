@@ -8,24 +8,6 @@
 # Minimum length 6 characters.
 # Maximum length 16 characters.
 
-# import re
-
-# password = input('Enter password: ')
-# maxlength = len(password)
-# minlength = len(password)
-
-# must_have = [re.findall("\d{1}", password), re.findall("[A-Z]{1}", password), 
-#              re.findall("[a-z]{1}", password), re.findall("[$#@]{1}", password)]
-
-# def password_validation(password):
-#     if all(must_have) and maxlength <=16 and minlength >=6:
-#         return f"Hi)"
-#     else:
-#         return f"Incorrect password"
-
-# print(password_validation(password))
-
-
 import re
 
 password = input('Enter password: ')
