@@ -74,3 +74,9 @@ print(f"Population in {country}: {population}")
 print(f"Last Day confirmed Covid-19 cases in {country}: {total_confirmed}")
 print(f"Total confirmed Covid-19 cases in {country}: {total_confirmed_cases}")
 print(f"Total death due to confirmed Covid-19 cases in {country}: {total_death}")
+
+for_notes = f"{today}  \n{country}      |  population           |  {population} \n             | last day confirmed    |     {total_confirmed} \n"
+
+file = open("statistics.txt", "a")
+file.write(for_notes)
+file.close()
