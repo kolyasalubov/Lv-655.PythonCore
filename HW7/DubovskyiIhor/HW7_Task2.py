@@ -1,12 +1,3 @@
-# Write a Python program to check the validity of a password (input from users).
-
-# Validation :
-# At least 1 letter between [a-z] and 1 letter between [A-Z].
-# At least 1 number between [0-9].
-# At least 1 character from [$#@].
-# Minimum length 6 characters.
-# Maximum length 16 characters.
-
 import string
 
 def validity(password):
@@ -18,7 +9,7 @@ def validity(password):
                 result='valid'
             if item in string.ascii_uppercase:
                 result='valid'
-            if item in string.punctuation:
+            if item in [$#@]:
                 result='valid'
             else:
                 result='invalid'
@@ -26,3 +17,29 @@ def validity(password):
     return result
 
 print(validity(input('Input your password: ')))
+
+###################################################################
+
+
+import re
+
+def validity():
+    result_1 = re.findall("[a-z]", pattern)
+    result_2 = re.findall("[A-Z]", pattern)
+    result_3 = re.findall("[$#@]", pattern)
+    result_4 = re.findall("\d", pattern)
+    if bool(result_1)==True and bool(result_2)==True and bool(result_3)==True and bool(result_4)==True:
+        return("Valid password")
+    else:
+        return("Invalid password")   
+
+pattern=input('Input your password: ')
+if len(pattern)>=6 and len(pattern)<=16:
+    print(validity())
+else:  
+    print("Invalid password")
+
+  
+
+
+
