@@ -29,11 +29,13 @@
 # print('str[:] = ', id(str), id(str[:]))
 
 
-t = "PrOgRaMiZ"
-d = t.upper()
-print(id(t), id(d))
+# t = "PrOgRaMiZ"
+# d = t.upper()
+# print(id(t), id(d))
 
+from re import *
 
+print(dir())
 
 
 
