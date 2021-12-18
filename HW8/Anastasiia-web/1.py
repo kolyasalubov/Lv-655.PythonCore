@@ -24,3 +24,27 @@ r = Rectangle()
 r.inputSides()
 r.dispSides()
 r.findArea()
+
+# Option with user input separated by coma
+import re
+
+class Polygon:
+    def __init__(self, sides_a_b):
+        self.sides = sides_a_b
+
+    def inputSides(self):       
+        sides_a_b = input('Enter 2 numbers separated by coma: ')
+        nums = re.findall(r'\d+', sides_a_b)   
+        self.sides = [int(i) for i in nums]  
+
+class Rectangle(Polygon):
+    def __init__(self):
+        super().__init__(self)  
+    def findArea(self):
+        a, b = self.sides
+        area = a*b
+        print(f'The area of the rectangle is {area}')
+
+r = Rectangle()
+r.inputSides()
+r.findArea()
