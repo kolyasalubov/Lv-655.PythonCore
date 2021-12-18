@@ -33,7 +33,7 @@ class Polygon:
         self.sides = sides_a_b
 
     def inputSides(self):       
-        sides_a_b = input('Enter 2 numbers separated by coma: ')
+        sides_a_b = input('Enter 2 numbers separated by coma or space: ')
         nums = re.findall(r'\d+', sides_a_b)   
         self.sides = [int(i) for i in nums]  
 
