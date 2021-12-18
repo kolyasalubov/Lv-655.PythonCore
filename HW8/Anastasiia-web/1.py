@@ -25,7 +25,7 @@ r.inputSides()
 r.dispSides()
 r.findArea()
 
-# Option with user input separated by coma
+# Option with user input separated by coma or space
 import re
 
 class Polygon:
