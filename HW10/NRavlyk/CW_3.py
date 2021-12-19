@@ -1,3 +1,10 @@
-class Person:
-    def __init__(self,name,age):
-        self.info=f"{name}s age is {age}"
+class Human():
+        pass
+    
+class Man(Human):
+        pass 
+class Woman(Human):
+        pass
+    
+def God():
+    return [Man(),Woman()]
