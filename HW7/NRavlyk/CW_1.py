@@ -1,3 +1,4 @@
+# не пройшов
 def count_positives_sum_negatives(arr):
     retsumm = [0,0]
     for number in arr:

@@ -31,3 +31,4 @@ elif n==3:
     mside2=float(input("input side of Rectangle  "))
     area=area_rectangle(mside1,mside2)
     print("Area of Rectangle is: ", area)
+    
