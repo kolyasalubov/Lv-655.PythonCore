@@ -1,6 +1,6 @@
 
 
-def are_you_playing_banjo(name):
+def are_you_playing_banjo(name) -> str:
 
     '''
     The function takes a name as its only argument, and returns one of the following strings:

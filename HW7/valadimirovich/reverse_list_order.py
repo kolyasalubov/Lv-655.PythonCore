@@ -1,6 +1,6 @@
 
 
-def reverse_list(l:list):
+def reverse_list(l:list) -> list:
     
     '''
     Function takes in a list and returns a list with the reverse order

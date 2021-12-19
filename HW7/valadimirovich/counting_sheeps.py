@@ -1,6 +1,6 @@
 
 
-def count_sheeps(sheep):
+def count_sheeps(sheep) -> int:
     
     '''
     Function expects an array/list of sheep where some sheep may be missing from their place. 

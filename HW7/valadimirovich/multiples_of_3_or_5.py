@@ -1,6 +1,6 @@
 
 
-def solution(number):
+def solution(number) -> int:
     
     '''
     Function expects intager atribute and returns the sum of all the multiples 

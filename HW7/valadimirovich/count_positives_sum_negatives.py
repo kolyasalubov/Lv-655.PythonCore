@@ -1,6 +1,6 @@
 
 
-def count_positives_sum_negatives(arr):
+def count_positives_sum_negatives(arr) -> list:
     
     '''
     Function expects arrey of integers, and returns an array, 

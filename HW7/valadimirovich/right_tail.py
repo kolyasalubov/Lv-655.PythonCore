@@ -1,6 +1,6 @@
 
 
-def correct_tail(body, tail):
+def correct_tail(body, tail) -> bool:
     
     '''
     Function expects for two string arguments the second argument (tail), 

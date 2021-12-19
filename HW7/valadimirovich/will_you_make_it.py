@@ -1,6 +1,6 @@
 
 
-def zero_fuel(distance_to_pump, mpg, fuel_left):
+def zero_fuel(distance_to_pump, mpg, fuel_left) -> bool:
     
     '''
     Function expects positive ints calculates disctance which you can drive

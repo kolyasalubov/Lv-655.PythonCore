@@ -1,6 +1,6 @@
 import script_with_functions
 
-def input_from_user(name_or_requested_value:str):
+def input_from_user(name_or_requested_value:str) -> float:
     '''
     function requests value from user trys to converts it into float
     catches value error ant interrupts script, or returns float if everything is good
@@ -12,7 +12,7 @@ def input_from_user(name_or_requested_value:str):
         exit()
     return user_input_value
 
-def printing_result(area:float):
+def printing_result(area:float) -> None:
     '''
     Expects one float argument for area and prints result into console
     returns None
@@ -36,7 +36,7 @@ elif user_selection == 'triangle':
 elif user_selection == 'circle':
     radius = input_from_user('radius')
     printing_result(script_with_functions.calculate_circle_area(radius))
-    
+
 else:
     print('Your input was invelid and program would be terminated')
     exit()
