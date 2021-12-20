@@ -22,7 +22,7 @@ def calculate_circle_area(radius = 0.0) -> float:
 
     '''
     Expects one float arguments for circle radius
-    calculates area and returns float value for it
+    calculates area and returns float value for it (round to 4 digits after period)
     '''
     return round(pi * pow(radius, 2), 4)
 
