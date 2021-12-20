@@ -10,9 +10,6 @@ def summation(num:int) -> int:
     summation(8) -> 36
     1 + 2 + 3 + 4 + 5 + 6 + 7 + 8
     '''
-    
-    result = 0
-    for number in range(1,num+1):
-        result+=number
-    return result
+        
+    return sum(range(num+1))
     
