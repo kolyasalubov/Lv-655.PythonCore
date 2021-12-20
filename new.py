@@ -33,11 +33,17 @@
 # d = t.upper()
 # print(id(t), id(d))
 
-from re import *
+# from re import *
 
-print(dir())
+# print(dir())
 
+# def testing_def_args(name, msg = 'Text here'):
+#     print('Some text', msg, name)
 
+# testing_def_args('Test_user', msg='lalalala')
 
+def func_with_args(*args):
+    for argument in args:
+        print(argument)
 
-
+print(func_with_args(*'STRANGE WORDS'))

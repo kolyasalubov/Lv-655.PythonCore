@@ -15,7 +15,7 @@ def count_positives_sum_negatives(arr) -> list:
     if arr == [] or arr == [None] or arr == None:
         return arr
     
-    counter_of_positive, counter_of_negative = 0 , 0
+    counter_of_positive, sum_of_negative = 0 , 0
     
     for item in arr:
         
@@ -23,7 +23,7 @@ def count_positives_sum_negatives(arr) -> list:
             counter_of_positive+=1
             
         elif item<0:
-            counter_of_negative+=(item)
+            sum_of_negative+=(item)
         
-    return [counter_of_positive, counter_of_negative]
+    return [counter_of_positive, sum_of_negative]
 
