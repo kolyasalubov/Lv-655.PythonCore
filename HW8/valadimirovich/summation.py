@@ -12,4 +12,10 @@ def summation(num:int) -> int:
     '''
         
     return sum(range(num+1))
+
+
+# Alternative:
+def sum_sll(*srgs) -> int:
+    return sum(args)
+
     
