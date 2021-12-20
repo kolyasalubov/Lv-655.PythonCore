@@ -42,8 +42,45 @@
 
 # testing_def_args('Test_user', msg='lalalala')
 
-def func_with_args(*args):
-    for argument in args:
-        print(argument)
+# def func_with_args(*args):
+#     print(args)
 
-print(func_with_args(*'STRANGE WORDS'))
+# print(func_with_args(*'STRANGE WORDS'))
+
+# import base64
+
+# message = "Python is fun"
+# message_bytes = message.encode('ascii')
+# base64_bytes = base64.b64encode(message_bytes)
+# base64_message = base64_bytes.decode('ascii')
+
+# print(message_bytes.decode())
+# print(base64_bytes)
+# print(base64_message)
+
+# x = 'Outside of the func text'
+
+# def sneaking_out():
+#     global x 
+#     x = x + "111"
+#     print(x)
+
+# sneaking_out()
+# print(x)
+x =20
+def non_local_func():
+    x = 1473
+    print('non_l func', x)
+    def local_func():
+        # print('before assigment', x)
+        x = 1111
+        print('after assigment', x)
+    
+        def even_further():
+            nonlocal x
+            print('frominside of inside', x)
+        even_further()
+    
+    local_func()
+
+non_local_func()

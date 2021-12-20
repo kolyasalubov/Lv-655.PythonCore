@@ -1,6 +1,6 @@
 
 
-def calculating_string_chars(input_string:str):
+def calculating_string_chars(input_string:str) -> dict:
 
     '''
     Function expects string, calculates the number of characters included in a given string

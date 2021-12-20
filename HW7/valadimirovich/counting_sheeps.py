@@ -21,7 +21,7 @@ def count_sheeps(sheep) -> int:
     
     for item in sheep:
         
-        if item == True:
+        if item == True: # could be just 'if item:' but not sure about 'undefined' items so this should be more reliable
             
             counter += 1
             

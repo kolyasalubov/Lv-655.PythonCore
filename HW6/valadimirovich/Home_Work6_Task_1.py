@@ -1,6 +1,6 @@
 
 
-def compering_two_numbers(first_number=0, second_number=0):
+def compering_two_numbers(first_number=0, second_number=0) -> int:
     
     '''
     Function returns the largest number of two numbers

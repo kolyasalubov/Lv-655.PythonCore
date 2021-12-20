@@ -3,7 +3,7 @@ from math import sqrt
 PI = 3.14 # constand which could be imported from math modul 
           # or saved in separate file with all constants and imported from there
 
-def calculating_area_of_the_rectangle(side_a:float, side_b:float):
+def calculating_area_of_the_rectangle(side_a:float, side_b:float) -> float:
     
     '''
     Function calculates area of the rectangle
@@ -13,7 +13,7 @@ def calculating_area_of_the_rectangle(side_a:float, side_b:float):
     return (side_a*side_b)
 
 
-def calculating_area_of_the_triangle(side_a:float, side_b:float, side_c:float):
+def calculating_area_of_the_triangle(side_a:float, side_b:float, side_c:float) -> float:
 
     '''
     Function calculates are of the tiangle (scalene, equilateral or isisceles triangle)
@@ -39,7 +39,7 @@ def calculating_area_of_the_triangle(side_a:float, side_b:float, side_c:float):
         return sqrt(s(s - side_a) * (s - side_b) * (s - side_c))
 
 
-def calculating_area_of_the_circle(radius:float):
+def calculating_area_of_the_circle(radius:float) -> float:
     
     '''
     Function calculates are of the circle
