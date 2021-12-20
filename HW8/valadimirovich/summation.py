@@ -15,7 +15,10 @@ def summation(num:int) -> int:
 
 
 # Alternative:
-def sum_sll(*srgs) -> int:
+def sum_sll(*args) -> int:
     return sum(args)
+
+# Or insted of calling separate function, just add lambda func if it's one time use
+lambda *args: sum(args)
 
     
