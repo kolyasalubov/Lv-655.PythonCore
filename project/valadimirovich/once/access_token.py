@@ -1,6 +1,6 @@
 import requests, json, time
 from authorization import authorization as author
-from urls import url_access_token as url
+from constants import url_access_token as url
 
 def getting_access_token() -> str:
 
