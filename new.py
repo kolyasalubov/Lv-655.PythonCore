@@ -67,20 +67,20 @@
 
 # sneaking_out()
 # print(x)
-x =20
-def non_local_func():
-    x = 1473
-    print('non_l func', x)
-    def local_func():
-        # print('before assigment', x)
-        x = 1111
-        print('after assigment', x)
+# x =20
+# def non_local_func():
+#     x = 1473
+#     print('non_l func', x)
+#     def local_func():
+#         # print('before assigment', x)
+#         x = 1111
+#         print('after assigment', x)
     
-        def even_further():
-            nonlocal x
-            print('frominside of inside', x)
-        even_further()
+#         def even_further():
+#             nonlocal x
+#             print('frominside of inside', x)
+#         even_further()
     
-    local_func()
+#     local_func()
 
-non_local_func()
+# non_local_func()
