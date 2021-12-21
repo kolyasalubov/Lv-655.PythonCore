@@ -14,9 +14,15 @@ def getting_access_token() -> str:
 
     time_stemp = 0
 
-    time_stamp_file = open('time_stemp.txt')
+    try:
+        with open('time_stemp.txt') as time_stamp_file:
+            time_stemp = int(time_stamp_file.read())
+    except Exception as ex:
+        print(ex)
 
-    time_stemp = int(time_stamp_file.read())
+
+
+    
 
     if int(time.time()) - 3600 >= time_stemp:
         
@@ -35,13 +41,18 @@ def getting_access_token() -> str:
 
         access_token = response_dict['access_token']
 
-        my_file = open('token_cache.bin', 'wb')
-        my_file.write(access_token.encode('ascii'))
-        my_file.close()
+        try:
+            with open('token_cache.bin', 'wb') as my_token:
+                my_token.write(access_token.encode('ascii'))
+        except Exception as ex:
+            print('Exception with token file ', ex)
+        
+        try:
+            with open('time_stemp.txt', 'w') as time_stamp_file:
+                time_stamp_file.write(str(int(time.time())))
+        except Exception as ex:
+            print('Exception with time stamp file ', ex)
 
-        time_stamp_file = open('time_stemp.txt', 'w')
-        time_stamp_file.write(str(int(time.time())))
-        time_stamp_file.close()
 
         print('Fresh token')
 
@@ -49,11 +60,11 @@ def getting_access_token() -> str:
 
     else:
 
-        my_file = open('token_cache.bin', 'rb')
-
-        access_token_bytes = my_file.read()
-
-        my_file.close()
+        try:
+            with open('token_cache.bin', 'rb') as my_token_file:
+                access_token_bytes = my_token_file.read()
+        except Exception as ex:
+            print('Error loading token from the file ', ex)
 
         access_token_from_file = access_token_bytes.decode('ascii')
         
