@@ -22,4 +22,5 @@ sourse code
 https://github.com/realpython/materials/blob/master/consuming-apis-python/covid.py
 
 API documentation Postman https://documenter.getpostman.com/view/10808728/SzS8rjbc
+
 country slug from the list: https://api.covid19api.com/countries
