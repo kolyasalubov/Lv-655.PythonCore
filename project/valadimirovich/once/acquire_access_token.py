@@ -71,4 +71,3 @@ def acquire_access_token() -> str:
         return access_token_from_file
 
 
-acquire_access_token()

@@ -1,4 +1,5 @@
-import base64
+import base64, sys
+from pprint import pprint
 
 
 def authorization() -> str:
@@ -21,3 +22,5 @@ def authorization() -> str:
 
     return user_credentials_base64
 
+pprint(sys.argv)
+pprint(sys.executable)
