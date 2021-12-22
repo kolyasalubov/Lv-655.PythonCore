@@ -8,7 +8,7 @@ while invalid:
     
     # if re.findall(r'[a-z]', user_pass) != [] \
     #     and re.findall(r'[A-Z]', user_pass)!=[] \
-    #     and re.findall("#|@|$", user_pass)!=[] \
+    #     and re.findall([#@$], user_pass)!=[] \
     #     and re.findall(r'[0-9]', user_pass)!=[] \
     #     and 6 < len(user_pass) < 16:
     #     invalid = False
