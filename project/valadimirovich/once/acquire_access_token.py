@@ -1,8 +1,10 @@
-import requests, json, time
+import requests
+from json import loads as converts_json_to_dict
+from time import time
 from authorization import authorization as author
 from constants import url_access_token as url
 
-def getting_access_token() -> str:
+def acquire_access_token() -> str:
 
     '''
     Function checking if old access token is still valid 
@@ -21,7 +23,7 @@ def getting_access_token() -> str:
         print(ex)
 
 
-    if int(time.time()) - 3600 >= time_stemp:
+    if int(time()) - 3600 >= time_stemp:
         
         credentials = author()
         
@@ -34,7 +36,7 @@ def getting_access_token() -> str:
 
         my_response = requests.request('POST', url, json=my_payload, headers=my_headers)
         
-        response_dict = json.loads(my_response.text)
+        response_dict = converts_json_to_dict(my_response.text)
 
         access_token = response_dict['access_token']
 
@@ -46,7 +48,7 @@ def getting_access_token() -> str:
         
         try:
             with open('time_stemp.txt', 'w') as time_stamp_file:
-                time_stamp_file.write(str(int(time.time())))
+                time_stamp_file.write(str(int(time())))
         except Exception as ex:
             print('Exception with time stamp file ', ex)
 
@@ -65,6 +67,8 @@ def getting_access_token() -> str:
         access_token_from_file = access_token_bytes.decode('ascii')
         
         print('Old token')
-
+        
         return access_token_from_file
 
+
+acquire_access_token()

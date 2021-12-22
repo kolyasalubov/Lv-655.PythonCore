@@ -1,1 +1,1 @@
-__all__ = ['access_token', 'authorization', 'main_once', 'constants']
+__all__ = ['acquire_access_token', 'authorization', 'main_once', 'constants']
