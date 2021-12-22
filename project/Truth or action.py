@@ -14,32 +14,33 @@ image_skr = PhotoImage(file = 'E:123.png')# встановлюмо фон осн
 skrin = Label(root, image = image_skr)
 skrin.grid()
 
-count =0
+counter_ques=0
+counter_task=0
 count_ques=len(questions.ques)
 count_task=len(questions.task)
 
 # логіка роботи блоку "Правда"
 def quest():
-    global count
+    global counter_ques
     global count_ques
     lbl_result["text"] = element = choice(questions.ques)# функція рандому для запитань "Правда"
     questions.ques.remove(element)#видаляємо елемент який випав для уникнення повторів
-    count+=1
-    if count==count_ques:#умова друку повідомлення про закінчення гри
+    counter_ques+=1
+    if counter_ques==count_ques or counter_task==count_task:#умова друку повідомлення про закінчення гри
         lbl_result["foreground"] ="Green"
-        lbl_result["text"] ="Гра закінчена.\n Ви відповіли на всі питання блоку 'Правда'"
+        lbl_result["text"] ="Вітаємо!!!\nГра закінчена."
         
 # логіка роботи блоку "Дія"
 def quest1():
-    global count
+    global counter_task
     global count_task
     element= choice(questions.task)# функція рандому для завдань "Дія" 
     lbl_result["text"] = element
     questions.task.remove(element)#видаляємо елемент який випав для уникнення повторів
-    count+=1
-    if count==count_task:#умова друку повідомлення про закінчення гри
+    counter_task+=1
+    if counter_task==count_task or counter_ques==count_ques:#умова друку повідомлення про закінчення гри
         lbl_result["foreground"] ="Green"
-        lbl_result["text"] ="Гра закінчена.\n Ви виконали всі завдання блоку 'Дія'"
+        lbl_result["text"] ="Вітаємо!!!\nГра закінчена."
   
 # створюємо кнопку "Правда"
 btn = Button(root,
