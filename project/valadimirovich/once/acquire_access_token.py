@@ -1,7 +1,7 @@
 import requests
 from json import loads as converts_json_to_dict
 from time import time
-from authorization import authorization as author
+from coding_credanials import coding_credanials as author
 from constants import url_access_token as url
 
 def acquire_access_token() -> str:
@@ -71,3 +71,4 @@ def acquire_access_token() -> str:
         return access_token_from_file
 
 
+acquire_access_token()

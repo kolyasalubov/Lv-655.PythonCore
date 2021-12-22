@@ -1,8 +1,7 @@
-import base64, sys
-from pprint import pprint
+import base64
 
 
-def authorization() -> str:
+def coding_credanials() -> str:
     '''
     Promting user's ID and password from console 
     combining them 'ID:pass' and encoding into base64
@@ -22,5 +21,3 @@ def authorization() -> str:
 
     return user_credentials_base64
 
-pprint(sys.argv)
-pprint(sys.executable)
