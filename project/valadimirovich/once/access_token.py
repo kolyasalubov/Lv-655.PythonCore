@@ -21,9 +21,6 @@ def getting_access_token() -> str:
         print(ex)
 
 
-
-    
-
     if int(time.time()) - 3600 >= time_stemp:
         
         credentials = author()
@@ -53,7 +50,6 @@ def getting_access_token() -> str:
         except Exception as ex:
             print('Exception with time stamp file ', ex)
 
-
         print('Fresh token')
 
         return access_token
@@ -72,4 +68,3 @@ def getting_access_token() -> str:
 
         return access_token_from_file
 
-getting_access_token()
