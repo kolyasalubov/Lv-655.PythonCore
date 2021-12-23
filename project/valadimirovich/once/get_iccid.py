@@ -1,6 +1,10 @@
 import re
 
 def getting_iccid(number_id:int) -> int:
+    '''
+    Excpects for int serial number
+    Looks up IccID in the CSV file and returns int IccID
+    '''
     try:
         with open(r"C:\Hank\Python\HomeWork_GIT\Lv-655.PythonCore\project\valadimirovich\once\iccid.csv") as file_csv:
 

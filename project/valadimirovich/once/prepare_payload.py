@@ -1,6 +1,10 @@
 
 
 def preparing_payload()-> str:
+    '''
+    Promting source address and payload from user
+    forming and returning payload string
+    '''
 
     source_address = input('Please input source address:')
     payload = input('Please input the content body of the SMS massage: ')

@@ -5,6 +5,9 @@ from json import loads
 import prepare_payload
 
 class RemoteDevice():
+    '''
+    Device class has two instant methods, needs serial number and iccid
+    '''
 
     def __init__(self, number_id, iccid):
         self.number_id = number_id
@@ -13,6 +16,10 @@ class RemoteDevice():
         
     
     def get_sms(self) -> list:
+        '''
+        GET list of the massages from the server for particular IccID 
+        returns list of dicts
+        '''
 
         url = sms_get_post_url.format(self.iccid)
 
@@ -25,6 +32,10 @@ class RemoteDevice():
         return loads(my_reply.text)
     
     def send_sms(self) -> list:
+        '''
+        POST sends text massage
+        returns 'Created'
+        '''
 
         url = sms_get_post_url.format(self.iccid)
 

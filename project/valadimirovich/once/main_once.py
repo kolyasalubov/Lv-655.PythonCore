@@ -15,15 +15,3 @@ if __name__ == '__main__':
     for dicts in reply:
         pprint(reply)
 
-    # print(dict_of_sms['payload'], "\n", dict_of_sms['status']['description'])
-
-    # for keys, items in dict_of_sms.items():
-    #     print(f'Here your key: "{keys}", and it value is: "{items}"')
-
-
-
-    
-
-
-
-  
