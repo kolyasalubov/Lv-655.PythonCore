@@ -9,15 +9,17 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtWidgets import QMessageBox
 
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(300, 256)
+        MainWindow.resize(300, 250) #розмір вікна
         MainWindow.setIconSize(QtCore.QSize(24, 24))
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
+        #нижче описані параметри кнопок (розмір, колір, шрифт, розміщення тексту в середині)
         self.result = QtWidgets.QLabel(self.centralwidget)
         self.result.setGeometry(QtCore.QRect(0, 0, 300, 50))
         font = QtGui.QFont()
@@ -274,6 +276,9 @@ class Ui_MainWindow(object):
         self.btn_8.setText(_translate("MainWindow", "8"))
     
     def add_func(self):
+        """connect - з'єднює натискання кнопки(clicked) і виконання фунції (lambda)
+        lambda повертає параметр, який записаний на самій кнопці
+        при натисканні на кнопки викликається метод write_number і паредаєме туди параметр кнопки"""
         self.btn_0.clicked.connect(lambda: self.write_number(self.btn_0.text()))
         self.btn_1.clicked.connect(lambda: self.write_number(self.btn_1.text()))
         self.btn_2.clicked.connect(lambda: self.write_number(self.btn_2.text()))
@@ -298,18 +303,28 @@ class Ui_MainWindow(object):
     
 
     def write_number(self, number):
+        """
+        виводить запис при натисканні на кнопку у змінну result результату
+        """
         if self.result.text() == "0":
             self.result.setText(number)
         else:
             self.result.setText(self.result.text() + number)
 
     def equel(self):
+        """
+        перетворює записаний текстовий вираз в
+        математичний, для обрахунку результату
+        """
         try:
             res = eval(self.result.text())
             self.result.setNum(res)
         except ZeroDivisionError as e:
             self.result.setText("")
-            print(e)
+            error = QMessageBox()
+            error.setWindowTitle("Error")
+            error.setText("Division by 0")
+            error.exec_()
         except SyntaxError as e:
             self.result.setText("")
             print(e)
@@ -326,9 +341,9 @@ class Ui_MainWindow(object):
 
 if __name__ == "__main__":
     import sys
-    app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
-    sys.exit(app.exec_())
+    app = QtWidgets.QApplication(sys.argv) #створення нового об'єкта на основі класу QApplication із параметрами ком'ютера, на чкому запуститься програма
+    MainWindow = QtWidgets.QMainWindow() #створення вікна програми
+    ui = Ui_MainWindow() #змінна на основі класу
+    ui.setupUi(MainWindow) #виклик методу класу
+    MainWindow.show() #запускає вікно
+    sys.exit(app.exec_()) #вихід із програми

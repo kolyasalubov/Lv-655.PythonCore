@@ -67,7 +67,7 @@ print(n5)
 n_1 = 6834
 n_2 = 0
 
-# second option
+# second option 
 while n_1 > 0:
     digit = n_1 % 10
     n_1 //= 10
