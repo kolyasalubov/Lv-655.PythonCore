@@ -12,12 +12,12 @@ try:
 
     elif cs.country == "Poland":
 
-        with open("Projects\Anastasiia-web\Project_1\API_covid_statistics\src\statistics_Poland.txt", "a", encoding="utf-8") as pol_st:
+        with open(constants.POLAND, "a", encoding="utf-8") as pol_st:
             pol_st.write(permanent_notes)
 
     else:
 
-        with open("Projects\Anastasiia-web\Project_1\API_covid_statistics\src\statistics_others.txt", "a", encoding="utf-8") as oth_st:
+        with open(constants.OTHERS, "a", encoding="utf-8") as oth_st:
             oth_st.write(others_countries_notes)
 except Exception as ex:
     print(ex)

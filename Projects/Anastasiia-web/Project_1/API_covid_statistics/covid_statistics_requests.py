@@ -1,15 +1,14 @@
 import requests                                                                
 from datetime import date, timedelta
 import json
-
+import constants
 
 country = input('Country? ').capitalize()
 
 today = date.today()
 yesterday = today - timedelta(days=1)
 
-json_file_path = "Projects\Anastasiia-web\Project_1\API_covid_statistics\src\countries_list.json"
-
+json_file_path = constants.JSON_FILE
 with open(json_file_path, 'r') as j:
     contries_list = json.loads(j.read())
 
