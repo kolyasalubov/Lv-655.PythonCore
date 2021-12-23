@@ -7,3 +7,6 @@ Turkey       |  population             |  82319724
 2021-12-22  
 Egypt        |  population             |  98423595 
                 last day confirmed         7919 
+2021-12-23  
+Italy        |  population             |  60421760 
+                last day confirmed         1320346 

@@ -1,4 +1,5 @@
 import covid_statistics_requests as cs
+import constants
 
 permanent_notes = f"{cs.today}" """     last day confirmed        """ f"{cs.total_confirmed} \n "
 others_countries_notes = f"{cs.today}  \n{cs.country}        |  population             |  {cs.population} \n                last day confirmed         {cs.total_confirmed} \n"
@@ -6,7 +7,7 @@ others_countries_notes = f"{cs.today}  \n{cs.country}        |  population      
 try:
     if cs.country == "Ukraine":
                 
-        with open("Projects\Anastasiia-web\Project_1\API_covid_statistics\src\statistics_Ukraine.txt", "a", encoding="utf-8") as ukr_st:
+        with open(constants.UKRAINE, "a", encoding="utf-8") as ukr_st:
             ukr_st.write(permanent_notes)
 
     elif cs.country == "Poland":
